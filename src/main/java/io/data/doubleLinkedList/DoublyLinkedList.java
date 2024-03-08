@@ -28,6 +28,28 @@ public class DoublyLinkedList<T extends Comparable<T>> {
     }
   }
 
+  public void insertFromStart(T data){
+
+    Node<T> newNode=new Node<T>(data);
+
+    //if the element in linked list
+    if(tail==null && head==null){
+      //both of the first item in the linked list
+      System.out.println("\nInserting first element: "+data);
+      tail=newNode;
+      head=newNode;
+    }else{
+      assert head != null;
+      System.out.println("\nAdding new node: "+newNode.getData()+" , Before Current head node: "+head.getData());
+      /**Current Head node's previous node will be the new node*/
+      head.setPreviousNode(newNode);
+      /**New Node's next node will be current head node */
+      newNode.setNextNode(head);
+      /**now new head will be the new node*/
+      head=newNode;
+    }
+  }
+
   public void traverseForward() {
     Node<T> current = head;
     System.out.println("\nTraversal in forward direction:");
