@@ -6,7 +6,7 @@ public class DoublyLinkedList<T extends Comparable<T>> {
   private Node<T> tail;
 
   /**Find out the tail node and insert elements after tail node*/
-  public void insertFromEnd(T data){
+  public void addEnd(T data){
 
     Node<T> newNode=new Node<T>(data);
 
@@ -28,7 +28,7 @@ public class DoublyLinkedList<T extends Comparable<T>> {
     }
   }
 
-  public void insertFromStart(T data){
+  public void addFirst(T data){
 
     Node<T> newNode=new Node<T>(data);
 

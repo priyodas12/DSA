@@ -6,19 +6,22 @@ public class TestDoublyLinkedList {
 
     DoublyLinkedList<Integer> doublyLinkedList=new DoublyLinkedList<>();
 
-   /* doublyLinkedList.insertFromEnd(100);
-    doublyLinkedList.insertFromEnd(101);
-    doublyLinkedList.insertFromEnd(102);
-    doublyLinkedList.insertFromEnd(103);*/
+    doublyLinkedList.addEnd(100);
+    doublyLinkedList.addEnd(101);
+    doublyLinkedList.addEnd(102);
+    doublyLinkedList.addEnd(103);
+    doublyLinkedList.addEnd(104);
 
-    doublyLinkedList.insertFromStart(100);
-    doublyLinkedList.insertFromStart(101);
-    doublyLinkedList.insertFromStart(102);
-    doublyLinkedList.insertFromStart(103);
+    doublyLinkedList.traverseForward();
+
+    doublyLinkedList.addFirst(105);
+    doublyLinkedList.addFirst(106);
+    doublyLinkedList.addFirst(107);
+    doublyLinkedList.addFirst(108);
 
 
     doublyLinkedList.traverseForward();
-    doublyLinkedList.traverseBackward();
+
   }
 
 }
