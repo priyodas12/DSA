@@ -1,4 +1,4 @@
-package io.data.doubleLinkedList;
+package io.algo.linkedList;
 
 public class Node<T extends Comparable<T>> {
 

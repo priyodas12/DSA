@@ -1,8 +1,7 @@
-package io.algo;
+package io.algo.generic;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class Permutations {
     static List<List<Integer>> lists=new ArrayList<>();

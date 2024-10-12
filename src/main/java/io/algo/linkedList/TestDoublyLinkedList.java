@@ -1,4 +1,4 @@
-package io.data.doubleLinkedList;
+package io.algo.linkedList;
 
 public class TestDoublyLinkedList {
 

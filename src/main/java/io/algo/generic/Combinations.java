@@ -1,4 +1,4 @@
-package io.algo;
+package io.algo.generic;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
